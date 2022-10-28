@@ -9,6 +9,7 @@
   - get active threads count.
   
 #### App works in parallel so it can take multiple request from users.
+#### Maximum pool of threads can be changed in AsyncConfiguration file - for now it's 3.
 #### App is using H2 Database, we can connect to it through | localhost:8080/h2-console | when app is running
   - username: sa
   - password: password
