@@ -11,8 +11,6 @@ public interface WordService {
     CompletableFuture<List<Words>> saveAndWriteGenerated(int maxLength, int minLength, int howMany, String chars);
     @Async
     CompletableFuture<List<Words>> findAll();
-    @Async
-    CompletableFuture<List<Words>> saveAll(List<Words> words);
 
     int threadCounter();
 

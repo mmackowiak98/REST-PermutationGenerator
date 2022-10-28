@@ -133,8 +133,8 @@ public class WordServiceImpl implements WordService {
         return CompletableFuture.completedFuture(all);
     }
 
-    @Override
-    public CompletableFuture<List<Words>> saveAll(List<Words> words) {
+    @Async
+    CompletableFuture<List<Words>> saveAll(List<Words> words) {
         if (words == null) {
             throw new IllegalArgumentException("Words is null");
         }
