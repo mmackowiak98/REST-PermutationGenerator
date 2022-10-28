@@ -1,7 +1,6 @@
 package com.example.wordgenerator.recruitmenttask.controller;
 
 
-import com.example.wordgenerator.recruitmenttask.configuration.AsyncConfiguration;
 import com.example.wordgenerator.recruitmenttask.service.WordService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -13,7 +12,6 @@ import java.util.concurrent.CompletableFuture;
 public class WordController {
 
     private final WordService wordService;
-
 
 
     public WordController(WordService wordService) {

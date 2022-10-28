@@ -64,7 +64,7 @@ public class WordServiceImpl implements WordService {
     @Async
     void writeToFile() {
         try {
-            FileWriter fileWriter = new FileWriter("output.txt");
+            FileWriter fileWriter = new FileWriter("output.txt", true);
             for (Words word : listOfWords.get()) {
                 fileWriter.write(word.getWord() + "\n");
             }
